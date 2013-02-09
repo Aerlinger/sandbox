@@ -1,0 +1,9 @@
+2013-01-19 00:06:36.183 java[5794:1603] Unable to load realm info from SCDynamicStore
+Exception in thread "main" java.lang.IllegalArgumentException: Does not contain a valid host:port authority: file:///
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:162)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:198)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:228)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getServiceAddress(NameNode.java:222)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.initialize(SecondaryNameNode.java:161)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.<init>(SecondaryNameNode.java:129)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.main(SecondaryNameNode.java:567)

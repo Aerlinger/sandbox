@@ -1,0 +1,36 @@
+2013-01-21 14:17:07,824 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = MathBook/160.39.170.60
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-21 14:17:07,995 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-21 14:17:08,053 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-21 14:17:08,054 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-21 14:17:08,054 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: TaskTracker metrics system started
+2013-01-21 14:17:08,235 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-01-21 14:17:08,396 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-01-21 14:17:08,437 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-01-21 14:17:08,456 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
+2013-01-21 14:17:08,459 INFO org.apache.hadoop.mapred.TaskTracker: Starting tasktracker with owner as Aerlinger
+2013-01-21 14:17:08,460 INFO org.apache.hadoop.mapred.TaskTracker: Good mapred local directories are: /tmp/hadoop-Aerlinger/mapred/local
+2013-01-21 14:17:08,465 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-01-21 14:17:08,476 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2013-01-21 14:17:08,477 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source TaskTrackerMetrics registered.
+2013-01-21 14:17:08,513 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2013-01-21 14:17:08,516 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort56998 registered.
+2013-01-21 14:17:08,516 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort56998 registered.
+2013-01-21 14:17:08,518 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2013-01-21 14:17:08,518 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 56998: starting
+2013-01-21 14:17:08,519 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 56998: starting
+2013-01-21 14:17:08,519 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 56998: starting
+2013-01-21 14:17:08,519 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 56998: starting
+2013-01-21 14:17:08,519 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 56998: starting
+2013-01-21 14:17:08,520 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:56998
+2013-01-21 14:17:08,520 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_dyn-160-39-170-60.dyn.columbia.edu:localhost/127.0.0.1:56998
+2013-01-21 14:31:27,441 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at MathBook/160.39.170.60
+************************************************************/

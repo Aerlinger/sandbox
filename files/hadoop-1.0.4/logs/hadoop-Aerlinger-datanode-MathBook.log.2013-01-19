@@ -1,0 +1,222 @@
+2013-01-19 00:04:06,237 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:04:06,356 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:04:06,365 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:04:06,365 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:04:06,365 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2013-01-19 00:04:06,503 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-01-19 00:04:06,505 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2013-01-19 00:04:06,540 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-01-19 00:04:06,631 ERROR org.apache.hadoop.hdfs.server.datanode.DataNode: java.lang.IllegalArgumentException: Does not contain a valid host:port authority: file:///
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:162)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:198)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:228)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getServiceAddress(NameNode.java:222)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.startDataNode(DataNode.java:337)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.<init>(DataNode.java:299)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.makeInstance(DataNode.java:1582)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1521)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.createDataNode(DataNode.java:1539)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.secureMain(DataNode.java:1665)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.main(DataNode.java:1682)
+
+2013-01-19 00:04:06,632 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:06:34,829 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:06:34,946 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:06:34,954 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:06:34,955 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:06:34,955 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2013-01-19 00:06:35,080 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-01-19 00:06:35,083 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2013-01-19 00:06:35,196 ERROR org.apache.hadoop.hdfs.server.datanode.DataNode: java.lang.IllegalArgumentException: Does not contain a valid host:port authority: file:///
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:162)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:198)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:228)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getServiceAddress(NameNode.java:222)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.startDataNode(DataNode.java:337)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.<init>(DataNode.java:299)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.makeInstance(DataNode.java:1582)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1521)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.createDataNode(DataNode.java:1539)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.secureMain(DataNode.java:1665)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.main(DataNode.java:1682)
+
+2013-01-19 00:06:35,197 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:13:04,260 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:13:04,378 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:13:04,387 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:13:04,387 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:13:04,387 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2013-01-19 00:13:04,515 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-01-19 00:13:04,518 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2013-01-19 00:13:04,642 ERROR org.apache.hadoop.hdfs.server.datanode.DataNode: java.lang.IllegalArgumentException: Does not contain a valid host:port authority: file:///
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:162)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:198)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:228)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getServiceAddress(NameNode.java:222)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.startDataNode(DataNode.java:337)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.<init>(DataNode.java:299)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.makeInstance(DataNode.java:1582)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1521)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.createDataNode(DataNode.java:1539)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.secureMain(DataNode.java:1665)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.main(DataNode.java:1682)
+
+2013-01-19 00:13:04,643 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:18:31,876 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:18:31,930 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:31,930 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:31,996 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:18:32,005 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:18:32,005 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:18:32,005 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2013-01-19 00:18:32,041 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:32,042 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:32,097 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:32,097 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:32,123 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-01-19 00:18:32,126 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2013-01-19 00:18:32,214 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:32,214 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:32,329 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /tmp/hadoop-Aerlinger/dfs/data is not formatted.
+2013-01-19 00:18:32,329 INFO org.apache.hadoop.hdfs.server.common.Storage: Formatting ...
+2013-01-19 00:18:32,363 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2013-01-19 00:18:32,375 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 50010
+2013-01-19 00:18:32,377 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2013-01-19 00:18:32,430 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-01-19 00:18:32,486 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-01-19 00:18:32,495 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dfs.webhdfs.enabled = false
+2013-01-19 00:18:32,495 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2013-01-19 00:18:32,496 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2013-01-19 00:18:32,496 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2013-01-19 00:18:32,496 INFO org.mortbay.log: jetty-6.1.26
+2013-01-19 00:18:32,753 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2013-01-19 00:18:32,760 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2013-01-19 00:18:32,761 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source DataNode registered.
+2013-01-19 00:18:32,907 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2013-01-19 00:18:32,909 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort50020 registered.
+2013-01-19 00:18:32,910 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort50020 registered.
+2013-01-19 00:18:32,912 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(192.168.1.122:50010, storageID=, infoPort=50075, ipcPort=50020)
+2013-01-19 00:18:32,932 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: New storage id DS-1721027388-192.168.1.122-50010-1358572712921 is assigned to data-node 127.0.0.1:50010
+2013-01-19 00:18:32,932 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting asynchronous block report scan
+2013-01-19 00:18:32,932 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished asynchronous block report scan in 0ms
+2013-01-19 00:18:32,932 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(127.0.0.1:50010, storageID=DS-1721027388-192.168.1.122-50010-1358572712921, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/tmp/hadoop-Aerlinger/dfs/data/current'}
+2013-01-19 00:18:32,932 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2013-01-19 00:18:32,933 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2013-01-19 00:18:32,933 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2013-01-19 00:18:32,934 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2013-01-19 00:18:32,934 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2013-01-19 00:18:32,934 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2013-01-19 00:18:32,936 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Reconciled asynchronous block report against current state in 0 ms
+2013-01-19 00:18:32,941 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks took 0 msec to generate and 5 msecs for RPC and NN processing
+2013-01-19 00:18:32,941 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner.
+2013-01-19 00:18:32,942 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Generated rough (lockless) block report in 0 ms
+2013-01-19 00:18:32,942 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Reconciled asynchronous block report against current state in 0 ms
+2013-01-19 00:19:58,341 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:20:03,236 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:20:03,293 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:03,293 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:03,357 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:20:03,365 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:20:03,366 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:20:03,366 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2013-01-19 00:20:03,401 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:03,401 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:03,431 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-01-19 00:20:03,517 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:03,517 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:03,651 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2013-01-19 00:20:03,664 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 50010
+2013-01-19 00:20:03,665 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2013-01-19 00:20:03,701 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-01-19 00:20:03,758 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-01-19 00:20:03,770 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dfs.webhdfs.enabled = false
+2013-01-19 00:20:03,770 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2013-01-19 00:20:03,770 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2013-01-19 00:20:03,770 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2013-01-19 00:20:03,770 INFO org.mortbay.log: jetty-6.1.26
+2013-01-19 00:20:04,060 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2013-01-19 00:20:04,068 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2013-01-19 00:20:04,068 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source DataNode registered.
+2013-01-19 00:20:04,209 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2013-01-19 00:20:04,212 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort50020 registered.
+2013-01-19 00:20:04,212 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort50020 registered.
+2013-01-19 00:20:04,213 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(192.168.1.122:50010, storageID=DS-1721027388-192.168.1.122-50010-1358572712921, infoPort=50075, ipcPort=50020)
+2013-01-19 00:20:04,219 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting asynchronous block report scan
+2013-01-19 00:20:04,220 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(127.0.0.1:50010, storageID=DS-1721027388-192.168.1.122-50010-1358572712921, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/tmp/hadoop-Aerlinger/dfs/data/current'}
+2013-01-19 00:20:04,220 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished asynchronous block report scan in 1ms
+2013-01-19 00:20:04,220 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2013-01-19 00:20:04,220 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2013-01-19 00:20:04,221 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2013-01-19 00:20:04,221 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2013-01-19 00:20:04,221 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2013-01-19 00:20:04,221 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2013-01-19 00:20:04,223 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Reconciled asynchronous block report against current state in 0 ms
+2013-01-19 00:20:04,227 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks took 0 msec to generate and 4 msecs for RPC and NN processing
+2013-01-19 00:20:04,227 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner.
+2013-01-19 00:20:04,228 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Generated rough (lockless) block report in 0 ms
+2013-01-19 00:20:04,228 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Reconciled asynchronous block report against current state in 0 ms
+2013-01-19 00:22:21,347 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:22:21,347 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:22:21,364 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-207847142334974279_1001 src: /127.0.0.1:64365 dest: /127.0.0.1:50010
+2013-01-19 00:22:21,373 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /127.0.0.1:64365, dest: /127.0.0.1:50010, bytes: 4, op: HDFS_WRITE, cliID: DFSClient_637250887, offset: 0, srvID: DS-1721027388-192.168.1.122-50010-1358572712921, blockid: blk_-207847142334974279_1001, duration: 1176000
+2013-01-19 00:22:21,373 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_-207847142334974279_1001 terminating
+2013-01-19 00:23:25,391 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_-207847142334974279_1001
+2013-01-19 00:31:55,459 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting asynchronous block report scan
+2013-01-19 00:31:55,466 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished asynchronous block report scan in 1ms
+2013-01-19 00:31:58,458 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Reconciled asynchronous block report against current state in 0 ms
+2013-01-19 00:31:58,466 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 1 blocks took 0 msec to generate and 8 msecs for RPC and NN processing
+2013-01-19 01:31:56,672 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting asynchronous block report scan
+2013-01-19 01:31:56,679 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished asynchronous block report scan in 1ms
+2013-01-19 01:31:59,673 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Reconciled asynchronous block report against current state in 0 ms
+2013-01-19 01:31:59,674 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 1 blocks took 0 msec to generate and 1 msecs for RPC and NN processing
+2013-01-19 02:10:52,439 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at MathBook/192.168.1.122
+************************************************************/

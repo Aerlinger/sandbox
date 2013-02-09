@@ -1,0 +1,77 @@
+2013-01-19 00:07:11,396 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:07:11,545 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:07:11,593 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:07:11,594 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:07:11,594 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: TaskTracker metrics system started
+2013-01-19 00:07:11,823 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-01-19 00:07:11,825 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2013-01-19 00:07:11,891 ERROR org.apache.hadoop.mapred.TaskTracker: Can not start task tracker because java.lang.IllegalArgumentException: Does not contain a valid host:port authority: local
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:162)
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:128)
+	at org.apache.hadoop.mapred.JobTracker.getAddress(JobTracker.java:2560)
+	at org.apache.hadoop.mapred.TaskTracker.<init>(TaskTracker.java:1426)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:3742)
+
+2013-01-19 00:07:11,891 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:22:21,370 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:22:21,542 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:22:21,591 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:22:21,591 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:22:21,591 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: TaskTracker metrics system started
+2013-01-19 00:22:21,795 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-01-19 00:22:21,945 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-01-19 00:22:21,986 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-01-19 00:22:22,006 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
+2013-01-19 00:22:22,009 INFO org.apache.hadoop.mapred.TaskTracker: Starting tasktracker with owner as Aerlinger
+2013-01-19 00:22:22,010 INFO org.apache.hadoop.mapred.TaskTracker: Good mapred local directories are: /tmp/hadoop-Aerlinger/mapred/local
+2013-01-19 00:22:22,014 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-01-19 00:22:22,023 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2013-01-19 00:22:22,024 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source TaskTrackerMetrics registered.
+2013-01-19 00:22:22,053 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2013-01-19 00:22:22,055 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort64853 registered.
+2013-01-19 00:22:22,055 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort64853 registered.
+2013-01-19 00:22:22,056 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2013-01-19 00:22:22,057 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 64853: starting
+2013-01-19 00:22:22,057 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 64853: starting
+2013-01-19 00:22:22,057 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 64853: starting
+2013-01-19 00:22:22,057 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 64853: starting
+2013-01-19 00:22:22,057 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 64853: starting
+2013-01-19 00:22:22,058 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:64853
+2013-01-19 00:22:22,058 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_192.168.1.122:localhost/127.0.0.1:64853
+2013-01-19 00:22:22,097 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_192.168.1.122:localhost/127.0.0.1:64853
+2013-01-19 00:22:22,098 INFO org.apache.hadoop.mapred.TaskTracker:  Using ResourceCalculatorPlugin : null
+2013-01-19 00:22:22,111 WARN org.apache.hadoop.util.ProcessTree: setsid is not available on this machine. So not using it.
+2013-01-19 00:22:22,112 INFO org.apache.hadoop.util.ProcessTree: setsid exited with exit code 0
+2013-01-19 00:22:22,133 INFO org.apache.hadoop.util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2013-01-19 00:22:22,133 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
+2013-01-19 00:22:22,137 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2013-01-19 00:22:22,144 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ShuffleServerMetrics registered.
+2013-01-19 00:22:22,147 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2013-01-19 00:22:22,148 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2013-01-19 00:22:22,148 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2013-01-19 00:22:22,148 INFO org.mortbay.log: jetty-6.1.26
+2013-01-19 00:22:22,397 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2013-01-19 00:22:22,397 INFO org.apache.hadoop.mapred.TaskTracker: FILE_CACHE_SIZE for mapOutputServlet set to : 2000
+2013-01-19 00:22:25,452 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:22:25,453 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 02:10:52,435 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at MathBook/192.168.1.122
+************************************************************/

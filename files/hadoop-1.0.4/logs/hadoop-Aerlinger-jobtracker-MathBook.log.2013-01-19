@@ -1,0 +1,101 @@
+2013-01-19 00:07:10,445 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:07:10,546 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:07:10,555 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:07:10,556 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:07:10,556 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: JobTracker metrics system started
+2013-01-19 00:07:10,640 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source QueueMetrics,q=default registered.
+2013-01-19 00:07:10,807 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.IllegalArgumentException: Does not contain a valid host:port authority: local
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:162)
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:128)
+	at org.apache.hadoop.mapred.JobTracker.getAddress(JobTracker.java:2560)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2200)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2192)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2186)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:300)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:291)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4978)
+
+2013-01-19 00:07:10,807 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:22:20,283 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:22:20,393 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:22:20,401 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:22:20,402 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:22:20,402 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: JobTracker metrics system started
+2013-01-19 00:22:20,486 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source QueueMetrics,q=default registered.
+2013-01-19 00:22:20,686 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-01-19 00:22:20,687 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2013-01-19 00:22:20,688 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2013-01-19 00:22:20,688 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2013-01-19 00:22:20,688 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2013-01-19 00:22:20,689 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2013-01-19 00:22:20,698 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as Aerlinger
+2013-01-19 00:22:20,726 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2013-01-19 00:22:20,728 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort8021 registered.
+2013-01-19 00:22:20,728 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort8021 registered.
+2013-01-19 00:22:20,767 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-01-19 00:22:20,819 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-01-19 00:22:20,842 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-01-19 00:22:20,844 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2013-01-19 00:22:20,846 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2013-01-19 00:22:20,846 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2013-01-19 00:22:20,846 INFO org.mortbay.log: jetty-6.1.26
+2013-01-19 00:22:21,091 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2013-01-19 00:22:21,097 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2013-01-19 00:22:21,097 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source JobTrackerMetrics registered.
+2013-01-19 00:22:21,098 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 8021
+2013-01-19 00:22:21,098 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2013-01-19 00:22:21,143 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:22:21,143 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:22:21,236 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2013-01-19 00:22:21,266 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:22:21,267 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:22:21,269 INFO org.apache.hadoop.mapred.JobHistory: Creating DONE folder at file:/Users/Aerlinger/hadoop-1.0.4/logs/history/done
+2013-01-19 00:22:21,272 INFO org.apache.hadoop.mapred.JobTracker: History server being initialized in embedded mode
+2013-01-19 00:22:21,275 INFO org.apache.hadoop.mapred.JobHistoryServer: Started job history server at: localhost:50030
+2013-01-19 00:22:21,275 INFO org.apache.hadoop.mapred.JobTracker: Job History Server web address: localhost:50030
+2013-01-19 00:22:21,279 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2013-01-19 00:22:21,345 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:22:21,345 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:22:21,378 INFO org.apache.hadoop.mapred.JobTracker: Refreshing hosts information
+2013-01-19 00:22:21,398 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:22:21,399 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:22:21,399 INFO org.apache.hadoop.util.HostsFileReader: Setting the includes file to 
+2013-01-19 00:22:21,399 INFO org.apache.hadoop.util.HostsFileReader: Setting the excludes file to 
+2013-01-19 00:22:21,399 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2013-01-19 00:22:21,399 INFO org.apache.hadoop.mapred.JobTracker: Decommissioning 0 nodes
+2013-01-19 00:22:21,399 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2013-01-19 00:22:21,399 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8021: starting
+2013-01-19 00:22:21,400 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 8021: starting
+2013-01-19 00:22:21,400 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 8021: starting
+2013-01-19 00:22:21,400 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 8021: starting
+2013-01-19 00:22:21,400 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 8021: starting
+2013-01-19 00:22:21,401 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 8021: starting
+2013-01-19 00:22:21,401 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 8021: starting
+2013-01-19 00:22:21,401 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 8021: starting
+2013-01-19 00:22:21,401 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 8021: starting
+2013-01-19 00:22:21,401 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 8021: starting
+2013-01-19 00:22:21,401 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2013-01-19 00:22:21,401 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 8021: starting
+2013-01-19 00:22:25,477 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.1.122
+2013-01-19 00:22:25,478 INFO org.apache.hadoop.mapred.JobTracker: Adding tracker tracker_192.168.1.122:localhost/127.0.0.1:64853 to host 192.168.1.122
+2013-01-19 02:10:52,434 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at MathBook/192.168.1.122
+************************************************************/

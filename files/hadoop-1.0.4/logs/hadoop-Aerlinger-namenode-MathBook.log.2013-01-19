@@ -1,0 +1,267 @@
+2013-01-19 00:04:05,146 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:04:05,319 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:04:05,330 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:04:05,331 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:04:05,331 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2013-01-19 00:04:05,340 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.lang.IllegalArgumentException: Does not contain a valid host:port authority: file:///
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:162)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:198)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:228)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:262)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:496)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:1279)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:1288)
+
+2013-01-19 00:04:05,341 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:06:33,728 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:06:33,875 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:06:33,886 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:06:33,887 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:06:33,887 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2013-01-19 00:06:33,895 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.lang.IllegalArgumentException: Does not contain a valid host:port authority: file:///
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:162)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:198)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:228)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:262)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:496)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:1279)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:1288)
+
+2013-01-19 00:06:33,896 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:13:03,181 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:13:03,323 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:13:03,335 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:13:03,336 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:13:03,336 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2013-01-19 00:13:03,343 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.lang.IllegalArgumentException: Does not contain a valid host:port authority: file:///
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:162)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:198)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:228)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:262)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:496)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:1279)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:1288)
+
+2013-01-19 00:13:03,344 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:18:30,536 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:18:30,598 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:30,598 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:30,680 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:18:30,690 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:18:30,691 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:18:30,691 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2013-01-19 00:18:30,725 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:30,725 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:30,760 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:30,760 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:30,819 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:30,819 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:30,846 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-01-19 00:18:30,850 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2013-01-19 00:18:30,860 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2013-01-19 00:18:30,860 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2013-01-19 00:18:30,884 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2013-01-19 00:18:30,885 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.75 MB
+2013-01-19 00:18:30,885 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2013-01-19 00:18:30,885 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2013-01-19 00:18:30,907 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=Aerlinger
+2013-01-19 00:18:30,907 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2013-01-19 00:18:30,907 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2013-01-19 00:18:30,912 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2013-01-19 00:18:30,912 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2013-01-19 00:18:31,056 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2013-01-19 00:18:31,070 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2013-01-19 00:18:31,089 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 1
+2013-01-19 00:18:31,104 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2013-01-19 00:18:31,105 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 115 loaded in 0 seconds.
+2013-01-19 00:18:31,105 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /tmp/hadoop-Aerlinger/dfs/name/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2013-01-19 00:18:31,106 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 115 saved in 0 seconds.
+2013-01-19 00:18:31,119 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 115 saved in 0 seconds.
+2013-01-19 00:18:31,149 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2013-01-19 00:18:31,149 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 251 msecs
+2013-01-19 00:18:31,155 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 0
+2013-01-19 00:18:31,155 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
+2013-01-19 00:18:31,155 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 0
+2013-01-19 00:18:31,155 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
+2013-01-19 00:18:31,155 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode termination scan for invalid, over- and under-replicated blocks completed in 5 msec
+2013-01-19 00:18:31,155 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 0 secs.
+2013-01-19 00:18:31,155 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 0 racks and 0 datanodes
+2013-01-19 00:18:31,155 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 0 blocks
+2013-01-19 00:18:31,162 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2013-01-19 00:18:31,163 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 2 msec
+2013-01-19 00:18:31,163 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 2 msec processing time, 2 msec clock time, 1 cycles
+2013-01-19 00:18:31,163 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+2013-01-19 00:18:31,163 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2013-01-19 00:18:31,167 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source FSNamesystemMetrics registered.
+2013-01-19 00:18:31,193 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2013-01-19 00:18:31,195 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort8020 registered.
+2013-01-19 00:18:31,195 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort8020 registered.
+2013-01-19 00:18:31,197 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: localhost/127.0.0.1:8020
+2013-01-19 00:18:31,254 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-01-19 00:18:31,311 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-01-19 00:18:31,323 INFO org.apache.hadoop.http.HttpServer: dfs.webhdfs.enabled = false
+2013-01-19 00:18:31,330 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2013-01-19 00:18:31,332 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2013-01-19 00:18:31,332 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2013-01-19 00:18:31,332 INFO org.mortbay.log: jetty-6.1.26
+2013-01-19 00:18:31,580 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2013-01-19 00:18:31,581 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2013-01-19 00:18:31,581 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2013-01-19 00:18:31,581 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8020: starting
+2013-01-19 00:18:31,582 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 8020: starting
+2013-01-19 00:18:31,582 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 8020: starting
+2013-01-19 00:18:31,582 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 8020: starting
+2013-01-19 00:18:31,582 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 8020: starting
+2013-01-19 00:18:31,582 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 8020: starting
+2013-01-19 00:18:31,582 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 8020: starting
+2013-01-19 00:18:31,582 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 8020: starting
+2013-01-19 00:18:31,582 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 8020: starting
+2013-01-19 00:18:31,582 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 8020: starting
+2013-01-19 00:18:31,582 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 8020: starting
+2013-01-19 00:18:32,927 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 127.0.0.1:50010 storage DS-1721027388-192.168.1.122-50010-1358572712921
+2013-01-19 00:18:32,930 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:50010
+2013-01-19 00:18:32,938 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameSystem.processReport: from 127.0.0.1:50010, blocks: 0, processing time: 0 msecs
+2013-01-19 00:19:58,200 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:20:02,023 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:20:02,079 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:02,079 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:02,141 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-01-19 00:20:02,151 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-01-19 00:20:02,152 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-01-19 00:20:02,152 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2013-01-19 00:20:02,184 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:02,184 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:02,225 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:02,225 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:02,257 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-01-19 00:20:02,265 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2013-01-19 00:20:02,266 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2013-01-19 00:20:02,288 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2013-01-19 00:20:02,288 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.75 MB
+2013-01-19 00:20:02,288 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2013-01-19 00:20:02,288 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2013-01-19 00:20:02,307 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=Aerlinger
+2013-01-19 00:20:02,307 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2013-01-19 00:20:02,307 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2013-01-19 00:20:02,311 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2013-01-19 00:20:02,311 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2013-01-19 00:20:02,453 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2013-01-19 00:20:02,469 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2013-01-19 00:20:02,485 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 1
+2013-01-19 00:20:02,489 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2013-01-19 00:20:02,489 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 115 loaded in 0 seconds.
+2013-01-19 00:20:02,490 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /tmp/hadoop-Aerlinger/dfs/name/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2013-01-19 00:20:02,491 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 115 saved in 0 seconds.
+2013-01-19 00:20:02,507 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 115 saved in 0 seconds.
+2013-01-19 00:20:02,534 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2013-01-19 00:20:02,534 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 235 msecs
+2013-01-19 00:20:02,543 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 0
+2013-01-19 00:20:02,543 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
+2013-01-19 00:20:02,543 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 0
+2013-01-19 00:20:02,543 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
+2013-01-19 00:20:02,543 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode termination scan for invalid, over- and under-replicated blocks completed in 8 msec
+2013-01-19 00:20:02,543 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 0 secs.
+2013-01-19 00:20:02,543 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 0 racks and 0 datanodes
+2013-01-19 00:20:02,543 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 0 blocks
+2013-01-19 00:20:02,548 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2013-01-19 00:20:02,548 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 1 msec
+2013-01-19 00:20:02,548 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 1 msec processing time, 1 msec clock time, 1 cycles
+2013-01-19 00:20:02,548 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+2013-01-19 00:20:02,548 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2013-01-19 00:20:02,552 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source FSNamesystemMetrics registered.
+2013-01-19 00:20:02,575 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2013-01-19 00:20:02,577 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort8020 registered.
+2013-01-19 00:20:02,577 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort8020 registered.
+2013-01-19 00:20:02,579 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: localhost/127.0.0.1:8020
+2013-01-19 00:20:02,626 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-01-19 00:20:02,673 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-01-19 00:20:02,682 INFO org.apache.hadoop.http.HttpServer: dfs.webhdfs.enabled = false
+2013-01-19 00:20:02,687 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2013-01-19 00:20:02,689 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2013-01-19 00:20:02,689 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2013-01-19 00:20:02,689 INFO org.mortbay.log: jetty-6.1.26
+2013-01-19 00:20:02,966 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2013-01-19 00:20:02,966 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2013-01-19 00:20:02,966 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2013-01-19 00:20:02,966 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8020: starting
+2013-01-19 00:20:02,967 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 8020: starting
+2013-01-19 00:20:02,967 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 8020: starting
+2013-01-19 00:20:02,967 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 8020: starting
+2013-01-19 00:20:02,968 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 8020: starting
+2013-01-19 00:20:02,968 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 8020: starting
+2013-01-19 00:20:02,968 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 8020: starting
+2013-01-19 00:20:02,968 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 8020: starting
+2013-01-19 00:20:02,968 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 8020: starting
+2013-01-19 00:20:02,968 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 8020: starting
+2013-01-19 00:20:02,968 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 8020: starting
+2013-01-19 00:20:04,217 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 127.0.0.1:50010 storage DS-1721027388-192.168.1.122-50010-1358572712921
+2013-01-19 00:20:04,219 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:50010
+2013-01-19 00:20:04,225 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameSystem.processReport: from 127.0.0.1:50010, blocks: 0, processing time: 1 msecs
+2013-01-19 00:22:21,238 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2013-01-19 00:22:21,319 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /tmp/hadoop-Aerlinger/mapred/system/jobtracker.info. blk_-207847142334974279_1001
+2013-01-19 00:22:21,374 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-207847142334974279_1001 size 4
+2013-01-19 00:22:21,376 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /tmp/hadoop-Aerlinger/mapred/system/jobtracker.info from client DFSClient_637250887
+2013-01-19 00:22:21,377 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /tmp/hadoop-Aerlinger/mapred/system/jobtracker.info is closed by DFSClient_637250887
+2013-01-19 00:25:05,104 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2013-01-19 00:25:05,111 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 9 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 6 SyncTimes(ms): 2 
+2013-01-19 00:25:05,182 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:25:05,182 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:25:05,454 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 127.0.0.1
+2013-01-19 00:25:05,455 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 1 SyncTimes(ms): 2 
+2013-01-19 00:31:58,459 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameSystem.processReport: from 127.0.0.1:50010, blocks: 1, processing time: 0 msecs
+2013-01-19 01:25:05,439 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2013-01-19 01:25:05,440 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2013-01-19 01:25:05,502 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 127.0.0.1
+2013-01-19 01:25:05,502 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 1 SyncTimes(ms): 0 
+2013-01-19 01:31:59,673 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameSystem.processReport: from 127.0.0.1:50010, blocks: 1, processing time: 0 msecs
+2013-01-19 02:10:52,435 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at MathBook/192.168.1.122
+************************************************************/

@@ -1,0 +1,46 @@
+#!/usr/bin/env rake
+
+directory "tmp"
+# What we’re saying here is that the file named “hello.tmp” depends on the directory 
+#   "tmp". When rake runs across this, it’s going to create the directory "tmp" first 
+#   before running the "hello.tmp" task. 
+file "hello.tmp" => "tmp" do
+  sh "echo 'Hello' >> 'tmp/hello.tmp'"
+end
+
+# When you run it, you’ll see something like the following: 
+
+
+puts "Inside the rakefile"
+
+task :default do
+  puts "Inside :default"
+  foo = "Hello, World!"
+end
+
+desc "A run task"
+task :run do
+  puts "Running a task"
+end
+
+desc "An outer task"
+task :outer do
+  puts "Calling outer task"
+end
+
+
+namespace :db do
+  task :show do
+    puts "this is db:show"
+  end
+end
+
+
+task :outer do
+  puts "second definition"
+end
+
+
+task :my_task, :arg1, :arg2 do |t, args|
+    puts "Args were: #{args}"
+end

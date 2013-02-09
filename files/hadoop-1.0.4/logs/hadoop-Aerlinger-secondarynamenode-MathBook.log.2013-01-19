@@ -1,0 +1,151 @@
+2013-01-19 00:04:07,416 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:04:07,894 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:06:35,995 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:06:36,300 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:13:05,429 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:13:05,746 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:18:33,129 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:18:33,188 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:33,188 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:33,221 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:33,221 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:33,255 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:33,255 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:33,289 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:33,289 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:33,345 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:33,345 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:33,410 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:33,410 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:18:33,544 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Starting web server as: Aerlinger
+2013-01-19 00:18:33,578 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-01-19 00:18:33,625 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-01-19 00:18:33,628 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2013-01-19 00:18:33,631 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2013-01-19 00:18:33,631 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2013-01-19 00:18:33,632 INFO org.mortbay.log: jetty-6.1.26
+2013-01-19 00:18:33,847 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2013-01-19 00:18:33,847 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2013-01-19 00:18:33,847 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2013-01-19 00:18:33,847 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary image servlet up at: 0.0.0.0:50090
+2013-01-19 00:18:33,847 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2013-01-19 00:18:33,847 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2013-01-19 00:19:58,485 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at MathBook/192.168.1.122
+************************************************************/
+2013-01-19 00:20:04,423 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = MathBook/192.168.1.122
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.0 -r 1393290; compiled by 'hortonfo' on Wed Oct  3 05:13:58 UTC 2012
+************************************************************/
+2013-01-19 00:20:04,484 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:04,485 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:04,515 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:04,515 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:04,550 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:04,551 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:04,586 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:04,586 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:04,660 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:04,660 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:20:04,809 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Starting web server as: Aerlinger
+2013-01-19 00:20:04,849 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-01-19 00:20:04,892 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-01-19 00:20:04,894 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2013-01-19 00:20:04,898 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2013-01-19 00:20:04,898 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2013-01-19 00:20:04,898 INFO org.mortbay.log: jetty-6.1.26
+2013-01-19 00:20:05,105 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2013-01-19 00:20:05,105 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2013-01-19 00:20:05,106 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2013-01-19 00:20:05,106 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary image servlet up at: 0.0.0.0:50090
+2013-01-19 00:20:05,106 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2013-01-19 00:20:05,106 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2013-01-19 00:25:05,132 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:25:05,132 WARN org.apache.hadoop.conf.Configuration: bad conf file: element not <property>
+2013-01-19 00:25:05,205 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 115 bytes.
+2013-01-19 00:25:05,207 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 701 bytes.
+2013-01-19 00:25:05,208 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2013-01-19 00:25:05,208 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.75 MB
+2013-01-19 00:25:05,208 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2013-01-19 00:25:05,209 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2013-01-19 00:25:05,226 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=Aerlinger
+2013-01-19 00:25:05,226 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2013-01-19 00:25:05,226 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2013-01-19 00:25:05,228 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2013-01-19 00:25:05,228 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2013-01-19 00:25:05,233 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2013-01-19 00:25:05,356 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 1
+2013-01-19 00:25:05,357 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2013-01-19 00:25:05,361 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /tmp/hadoop-Aerlinger/dfs/namesecondary/current/edits of size 701 edits # 9 loaded in 0 seconds.
+2013-01-19 00:25:05,362 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2013-01-19 00:25:05,365 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 617 saved in 0 seconds.
+2013-01-19 00:25:05,372 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 617 saved in 0 seconds.
+2013-01-19 00:25:05,395 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=0.0.0.0&token=-32:1318296065:0:1358573105000:1358572802490
+2013-01-19 00:25:05,459 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 617
+2013-01-19 01:25:05,437 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2013-01-19 01:25:05,458 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 617 bytes.
+2013-01-19 01:25:05,459 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 4 bytes.
+2013-01-19 01:25:05,459 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2013-01-19 01:25:05,459 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.75 MB
+2013-01-19 01:25:05,459 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2013-01-19 01:25:05,459 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2013-01-19 01:25:05,461 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=Aerlinger
+2013-01-19 01:25:05,461 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2013-01-19 01:25:05,461 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2013-01-19 01:25:05,462 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2013-01-19 01:25:05,462 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2013-01-19 01:25:05,462 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2013-01-19 01:25:05,463 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 6
+2013-01-19 01:25:05,463 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2013-01-19 01:25:05,464 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /tmp/hadoop-Aerlinger/dfs/namesecondary/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2013-01-19 01:25:05,464 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2013-01-19 01:25:05,464 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 617 saved in 0 seconds.
+2013-01-19 01:25:05,491 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 617 saved in 0 seconds.
+2013-01-19 01:25:05,494 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=0.0.0.0&token=-32:1318296065:0:1358576705000:1358573105456
+2013-01-19 01:25:05,510 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 617
+2013-01-19 02:10:52,434 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at MathBook/192.168.1.122
+************************************************************/
