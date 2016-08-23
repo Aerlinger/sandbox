@@ -103,7 +103,8 @@ ll = TreeNode(3, None, lll)
 lr = TreeNode(3)
 
 l = TreeNode(2, ll, lr)
-r = TreeNode(2, None)
+rr = TreeNode(7)
+r = TreeNode(2, rr)
 
 asym_root = TreeNode(1, l, r)
 
@@ -250,6 +251,24 @@ def postorder(root, f):
   postorder(root.right, f)
   f(root)
 
+def process(node):
+  print(node.value)
+
+def bfs(root, f):
+  queue = [root]
+
+  while len(queue) > 0:
+    current_node = queue.pop(0)
+    print("Q: ", queue)
+
+    process(current_node)
+
+    if current_node.left:
+      queue.append(current_node.left)
+
+    if current_node.right:
+      queue.append(current_node.right)
+
 print("PREORDER")
 preorder(asym_root, lambda x: print(x.value))
 
@@ -258,6 +277,9 @@ inorder(asym_root, lambda x: print(x.value))
 
 print("POSTORDER")
 postorder(asym_root, lambda x: print(x.value))
+
+print("BFS")
+bfs(asym_root, lambda x: print(x.value))
 
 from linked_lists.node import Node
 
@@ -318,12 +340,55 @@ def perimeter(root):
 
   return left_edge
 
+def remove(node, ll):
+  iter = ll
+  prev_iter = None
 
+  while iter:
+    next_iter = iter.next
+
+    if (iter.value == node.value):
+      if prev_iter:
+        prev_iter.next = next_iter
+
+      iter.next = None
+      return iter
+
+    prev_iter = iter
+    iter = next_iter
+
+  return None
+
+def union(left, right):
+  temp_l = left
+  temp_r = right
+
+  head = None
+  current_head = head
+
+  # Def copy?
+  while temp_l and temp_r:
+    if temp_l.value is not temp_r.value:
+      if head is None:
+        head = temp_r
+        current_head = head
+
+      current_head.next = Node(temp_r.value)
+
+    temp_l = temp_l.next
+    temp_r = temp_r.next
+
+  return current_head
+
+le = left_edge_to_ll(x)
+re = right_edge_to_ll(x)
 
 print("TAIL", left_edge_to_ll(x).getTail())
 print("LEFT EDGE", left_edge_to_ll(x))
 print("LEAVES", leaves_to_ll(x))
 print("RIGHT EDGE", right_edge_to_ll(x))
 
-print("PERIM", perimeter(asym_root))
-print("PERIM", perimeter(root))
+print("UNION", union(le, re))
+
+# print("PERIM", perimeter(asym_root))
+# print("PERIM", perimeter(root))
