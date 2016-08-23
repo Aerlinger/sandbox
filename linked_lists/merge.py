@@ -5,7 +5,7 @@ left_m = Node('m', left_q)
 left_c = Node('b', left_m)
 left_b = Node('b', left_c)
 
-print str(left_b)
+print(str(left_b))
 
 
 right_t = Node('t')
@@ -15,7 +15,7 @@ right_d = Node('d', right_n)
 right_b = Node('b', right_d)
 right_a = Node('a', right_b)
 
-print str(right_a)
+print(str(right_a))
 
 
 def merge(left, right):
@@ -30,8 +30,8 @@ def merge(left, right):
   else:
     return None
 
-print "MERGE"
-print merge(left_b, right_a)
+print("MERGE")
+# print(merge(left_b, right_a))
 
 '''
 def reverse(head):
@@ -83,6 +83,55 @@ def is_cyclic(head, visited = []):
 
   return is_cyclic(head.getNext(), visited + [head])
 
-print is_cyclic(cyclic_t)
-print is_cyclic(right_t)
+print(is_cyclic(cyclic_t))
+print(is_cyclic(right_t))
 
+def reverse(head):
+  if head.next is None:
+    head.prev = None
+    return head
+
+  next_head = reverse(head.next)
+
+  head.next.setNext(head)
+  # if head.next.prev:
+  head.setPrev(head.next)
+  head.next = None
+
+  # print("M", head.value, head)
+
+  return next_head
+
+def doublelink(head):
+  if head is None:
+    return head
+
+  if head.next:
+    print(head.value, head.prev, head.next)
+    head.next.setPrev(head)
+
+  next_head = doublelink(head.next)
+
+  return next_head
+
+print(right_a)
+
+i = right_a
+while i:
+  print(i.prev and i.prev.value)
+
+  i = i.next
+
+print("")
+# print(reverse(right_a))
+doublelink(right_a)
+
+i = right_a
+while i:
+  print(i.value, (i.prev and i.prev.value))
+
+  i = i.next
+
+print(right_a)
+
+print(reverse(right_a))
