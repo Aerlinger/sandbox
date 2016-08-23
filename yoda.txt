@@ -1,0 +1,98 @@
+1. The “Are You There?”
+
+This one is pretty simple, but I’m amazed as to how it’s missed - finding out if a key exists in the dictionary.
+
+The Lame Version
+
+dct.has_key(key)
+The Python Way
+
+key in dct
+2. The “Yoda Test”
+
+For those programmers who master the “Are You There” play, there’s usually another simple, yet annoying behavior. It doesn’t only apply to dicts, but it’s very common.
+
+Do This You Must Not
+
+not key in dct
+English, Do You Speak It?
+
+key not in dct
+3. The “Get the Value Anyway”
+
+This one is really popular. You have a dictionary and a key, and you want to modify the key’s value. For example, adding 1 to it (let’s say you’re counting something).
+
+The Boilerplate
+
+if key not in dct:
+    dct[key] = 0
+dct[key] = dct[key] + 1
+The Awesome Way
+
+dct[key] = dct.get(key, 0) + 1
+dct.get(key[, default]) returns dct[key] if it exists, and default if not.
+
+The Even More Awesome
+
+If you’re using Python 2.7 and you want to count up amounts of stuff, you can use Counter.
+
+>>> from collections import Counter
+>>> d = [1, 1, 1, 2, 2, 3, 1, 1]
+>>> Counter(d)
+
+Counter({1: 5, 2: 2, 3: 1})
+And here’s a more complete example:
+
+>>> counter = Counter()
+... for _ in range(10):
+...     num = int(raw_input("Enter a number: "))
+...     counter.update([num]) 
+...
+... for key, value in counter.iteritems():
+...     print "You have entered {}, {} times!".format(key, value) 
+Enter a number: 1
+Enter a number: 1
+Enter a number: 2
+Enter a number: 3
+Enter a number: 51
+Enter a number: 1
+Enter a number: 1
+Enter a number: 1
+Enter a number: 2
+Enter a number: 3
+You have entered 1, 5 times!
+You have entered 2, 2 times!
+You have entered 3, 2 times!
+You have entered 51, 1 times!
+4. The “Make It Happen”
+
+Sometimes your dictionary contains mutable objects, and you want to initialize and modify them. Let’s say you’re sorting out some data into a dictionary where the values are lists (examples courtesy of this answer in Stack Overflow)
+
+Spelling It Out
+
+dct = {} 
+for (key, value) in data: 
+    if key in dct: 
+        dct[key].append(value) 
+    else: 
+        dct[key] = [value]
+Getting Down with the Python
+
+dct = {} 
+for (key, value) in data:
+    group = dct.setdefault(key, []) # key might exist already 
+    group.append(value)
+What setdefault(key, default) does is returns dct[key] if it exists, and if it doesn’t - sets it to default and returns it. Compared to get, it’s useful when the default value is an object you can modify, so you don’t have to manually reinsert its modified version to the dictionary.
+
+Rocking it Out
+
+dct = defaultdict(list) 
+for (key, value) in data: 
+    dct[key].append(value) # all keys have a default already
+defaultdict is pretty awesome. It’s pretty self-explanatory - it’s a dict with default values. This means that every access to a key in dct that doesn’t exist in the dictionary (that would usually raise a KeyError) creates it with the default value. It’s as if every access to dct is done with setdefault.
+
+One interesting use I’ve found for defaultdict is when implementing sparse data structures. You set defaultdict to the default value and use coordinates (or whatever is applicable) as the key. I’ve used this to represents multi-dimensional grids and it’s definitely easier than using intricately wrapped lists. 
+
+An even more interesting example of its use is the one-line tree definition.
+
+
