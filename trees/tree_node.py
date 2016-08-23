@@ -16,6 +16,17 @@ class TreeNode(object):
   def __repr__(self):
     return str(self.value)
 
+  def numChildren(self):
+    total = 0
+
+    if self.left:
+      total += 1
+
+    if self.right:
+      total += 1
+
+    return total
+
   def __str__(self):
     prefix = '  ' * self.value
 

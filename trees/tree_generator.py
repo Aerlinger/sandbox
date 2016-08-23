@@ -254,20 +254,49 @@ def postorder(root, f):
 def process(node):
   print(node.value)
 
+
+def depth(root, initial=0):
+  if root is None:
+    return 0
+
+  return 1 + max(depth(root.left), depth(root.right))
+
+def depth_map(root, total=0):
+  depth = total + 1
+
+  if root is None:
+    return (depth, None)
+
+  left_map = depth_map(root.left, depth)
+  right_map = depth_map(root.right, depth)
+
+  this_map = (depth, root)
+
+  return this_map, left_map, right_map
+
 def bfs(root, f):
   queue = [root]
+  buffer = []
+
+  net = 0
 
   while len(queue) > 0:
-    current_node = queue.pop(0)
-    print("Q: ", queue)
+    print("Q", queue[0].value, ":", queue, net, queue[0].numChildren())
 
-    process(current_node)
+    current_node = queue.pop(0)
+    net -= 1
+
+    # f(current_node)
 
     if current_node.left:
+      net += 1
       queue.append(current_node.left)
 
     if current_node.right:
+      net += 1
       queue.append(current_node.right)
+
+
 
 print("PREORDER")
 preorder(asym_root, lambda x: print(x.value))
@@ -279,7 +308,15 @@ print("POSTORDER")
 postorder(asym_root, lambda x: print(x.value))
 
 print("BFS")
-bfs(asym_root, lambda x: print(x.value))
+print(x)
+bfs(x, lambda x: print(x.value))
+
+print("DEPTH")
+print(depth_map(x))
+
+print("BFS Root")
+print(root)
+bfs(root, lambda x: print(x.value))
 
 from linked_lists.node import Node
 
@@ -389,6 +426,9 @@ print("LEAVES", leaves_to_ll(x))
 print("RIGHT EDGE", right_edge_to_ll(x))
 
 print("UNION", union(le, re))
+print("depth", depth(x))
+print("depth", depth(root))
+print("depth", depth(asym_root))
 
 # print("PERIM", perimeter(asym_root))
 # print("PERIM", perimeter(root))
