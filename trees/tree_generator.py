@@ -99,13 +99,15 @@ print("balance", balance(root))
 # Asymmtrical tree:
 
 lll = TreeNode(4)
-ll = TreeNode(3, lll)
+ll = TreeNode(3, None, lll)
 lr = TreeNode(3)
 
 l = TreeNode(2, ll, lr)
 r = TreeNode(2, None)
 
 asym_root = TreeNode(1, l, r)
+
+x = TreeNode(0, None, asym_root)
 
 print("\nPredefined tree")
 print(asym_root)
@@ -156,4 +158,172 @@ print("LCA, lll, ll", lca(asym_root, lll, ll))
 print("LCA, l, r", lca(asym_root, l, r))
 print("LCA, lll, r", lca(asym_root, lll, r))
 
+def flat_print(root):
+  if root is None:
+    return
 
+  flat_print(root.left)
+  print("(", root.value, ")")
+  flat_print(root.right)
+
+def leaves(root):
+  if not root:
+    return []
+
+  # We're at a leaf node
+  if not root.left and not root.right:
+    return [root]
+
+  return leaves(root.left) + leaves(root.right)
+
+def left_edge(root):
+  if not root:
+    return []
+
+  return [root] + left_edge(root.left)
+
+
+def right_edge(root):
+  if not root:
+    return []
+
+  return [root] + left_edge(root.left)
+
+def get_sum(root, path=(), total = 0):
+  if not root:
+    return {}
+
+  path = path + (root,)
+  total = total + root.value
+
+  if root.left is None and root.right is None:
+    return { path: total }
+
+  left_sums = get_sum(root.left, path, total)
+  right_sums = get_sum(root.right, path, total)
+
+  return {**left_sums, **right_sums}
+
+
+print(leaves(asym_root))
+print(leaves(root))
+print(())
+print(asym_root)
+print("SUM", get_sum(root))
+print("SUM", get_sum(asym_root))
+# print("Leaves", asym_root)
+# print("Leaves", root)
+
+def invert_dict(my_map):
+  inv_map = {}
+
+  for k, v in my_map.items():
+    inv_map.setdefault(v, []).append(k)
+
+  return inv_map
+
+print(invert_dict(get_sum(root)))
+print(invert_dict(get_sum(asym_root)))
+
+
+def preorder(root, f):
+  if root is None:
+    return
+
+  f(root)
+  preorder(root.left, f)
+  preorder(root.right, f)
+
+def inorder(root, f):
+  if root is None:
+    return
+
+  inorder(root.left, f)
+  f(root)
+  inorder(root.right, f)
+
+def postorder(root, f):
+  if root is None:
+    return
+
+  postorder(root.left, f)
+  postorder(root.right, f)
+  f(root)
+
+print("PREORDER")
+preorder(asym_root, lambda x: print(x.value))
+
+print("INORDER")
+inorder(asym_root, lambda x: print(x.value))
+
+print("POSTORDER")
+postorder(asym_root, lambda x: print(x.value))
+
+from linked_lists.node import Node
+
+def leaves_to_ll(root):
+  if not root:
+    return None
+
+  # We're at a leaf node
+  if not root.left and not root.right:
+    return Node(root.value)
+
+  head = leaves_to_ll(root.left)
+  tail = leaves_to_ll(root.right)
+
+  if head:
+    tail_of_head = head.getTail()
+    tail_of_head.next = tail
+
+    return head
+  else:
+    return tail
+
+def left_edge_to_ll(root):
+  if not root:
+    return
+
+  if root.left is None:
+    return Node(root.value, left_edge_to_ll(root.right))
+  else:
+    return Node(root.value, left_edge_to_ll(root.left))
+
+def right_edge_to_ll(root, path = None):
+  if not root:
+    return
+
+  if root.right is None:
+    return Node(root.value, right_edge_to_ll(root.left))
+  else:
+    return Node(root.value, right_edge_to_ll(root.right))
+#
+# def right_edge_to_ll(root, path = None):
+#   if not root.right:
+#     return Node(root.value)
+#
+#   n = Node(root.value)
+#   return right_edge_to_ll(root.right).setNext(n)
+
+def perimeter(root):
+  left_edge = left_edge_to_ll(root)
+  leaves = leaves_to_ll(root)
+  right_edge = right_edge_to_ll(root)
+
+  left_edge_tail = left_edge.getTail()
+  leaves_tail = leaves.getTail()
+
+  left_edge_tail.setNext(leaves.getNext())
+  leaves_tail.setNext(right_edge.getNext())
+
+  return left_edge
+
+
+
+print("TAIL", left_edge_to_ll(x).getTail())
+print("LEFT EDGE", left_edge_to_ll(x))
+print("LEAVES", leaves_to_ll(x))
+print("RIGHT EDGE", right_edge_to_ll(x))
+
+print("PERIM", perimeter(asym_root))
+print("PERIM", perimeter(root))

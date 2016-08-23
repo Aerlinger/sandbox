@@ -13,10 +13,16 @@ class Node(object):
     return self.next
 
   def setNext(self, next):
-    print self.value
     self.next = next
     return self
 
+  def getTail(self):
+    tail = self
+
+    while tail.next is not None:
+      tail = tail.next
+
+    return tail
 
   def dup(self):
     return Node(self.value, self.next)

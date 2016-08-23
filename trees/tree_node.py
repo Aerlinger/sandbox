@@ -13,6 +13,9 @@ class TreeNode(object):
   def getRight(self):
     return self.right
 
+  def __repr__(self):
+    return str(self.value)
+
   def __str__(self):
     prefix = '  ' * self.value
 
