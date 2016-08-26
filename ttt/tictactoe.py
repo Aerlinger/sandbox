@@ -6,6 +6,7 @@
 
 import math
 import random
+import copy
 
 
 all_positions = set([1, 2, 3, 4, 5, 6, 7, 8, 9])
@@ -13,8 +14,8 @@ all_positions = set([1, 2, 3, 4, 5, 6, 7, 8, 9])
 # Winning:
 winning_positions = set([
 (1, 4, 7),
-(2, 5, 6),
-(7, 8, 9),
+(2, 5, 8),
+(3, 6, 9),
 
 (1, 5, 9),
 (7, 5, 3),
@@ -102,15 +103,10 @@ def make_move(player_positions, position, player = "X", doprint = True):
 
   return new_board_state
 
-# print(available_moves(player_positions))
-
 def make_random_move(player_positions, player = "O", doprint=True):
   random_position = random.sample(available_moves(player_positions), 1)[0]
 
   return make_move(player_positions, random_position, player, doprint)
-
-
-# print(available_moves(player_positions))
 
 
 def determine_best_move(player_positions, my_player = "X"):
@@ -129,56 +125,37 @@ def merge_dict(left, right):
 
   return left
 
-def simulate_move(player_positions, player = "X", move_history = []):
+def simulate_move(player_positions, player = "X", move_history = [], doprint=False):
   if player_won(player_positions, "X"):
-    results = {}
-    score = len(move_history)
-    first_move = move_history[0]
-
-    # results.setdefault(score, []).append(first_move)
-
-    return { score: first_move }
+    print("\tX WIN", (9-len(move_history), move_history))
+    return (9-len(move_history), move_history)
 
   if player_won(player_positions, "O"):
-    results = {}
-    score = -len(move_history)
-    first_move = move_history[0]
-
-    results.setdefault(score, []).append(first_move)
-
-    return results
+    print("\tO WIN", (-9+len(move_history), move_history))
+    return (-9+len(move_history), move_history)
 
   if game_tied(player_positions):
-    results = {}
-    score = 0
-    first_move = move_history[0]
+    print("\tTIE", move_history, "\n")
+    return (0, move_history)
 
-    results.setdefault(score, []).append(first_move)
+  num_available_moves = len(available_moves(player_positions))
 
-    return results
+  max_score = -1000
+  current_history = None
 
-  best_score = 0
-
-  net_results = {}
   for available_move in available_moves(player_positions):
-    updated_player_position = make_move(player_positions, available_move, player, doprint=False)
-    opponent = other_player(player)
+    updated_player_position = make_move(player_positions, available_move, player, doprint=doprint)
+    score, history  = simulate_move(updated_player_position, other_player(player), move_history + [available_move])
 
-    results = simulate_move(updated_player_position, opponent, move_history + [available_move])
+    if score > max_score:
+      max_score = score
+      current_history = history
 
-    # if results[]
-
-    net_results = merge_dict(results, net_results)
-
-  max_score = max(net_results.keys())
-  best_first_move = net_results[max_score]
-
-  return { max_score: best_first_move }
+  print("Best scores for move", max_score, " --> ", (current_history))
+  return (max_score, current_history)
 
 
 merged = merge_dict({"a": [], "b": [1, 2 ,3]}, {"a": [1], "b": [3, 4], "c": [1, 10], "d": []})
-print("M", merged)
-print("M2", merge_dict(merged, {"a": [1], "b": [3, 4], "c": [1, 10], "d": []}))
 
 def test_coords():
   for i in range(1, 4):
@@ -198,7 +175,7 @@ player_positions = {
 current_turn = "X"
 turn = 1
 
-while(True):
+while(False):
   if current_turn == "X":
     best_move = determine_best_move(player_positions, "X")
     move = best_move["best_move"]
@@ -227,6 +204,110 @@ while(True):
 # player_positions = make_move(player_positions, 3, "X")
 # player_positions = make_move(player_positions, 2, "O")
 
+def predict_best_move(player_positions, player = "X"):
+  score, history = simulate_move(player_positions, player)
+  print("Best Move for ", player, ":", (score, history))
+
+  # if player == "X":
+  #   return (X_max, X_move_history)
+  # else:
+  #   return (O_min, O_move_history)
+
+player_positions = {
+  "X": set([3, 4, 7]),
+  "O": set([1, 2])
+}
+
+# print(draw_board(player_positions))
+# print("STARTING AS O")
+# print("BEST MOVE", predict_best_move(player_positions, "O"))
+
+# print("STARTING AS X")
+# print("BEST MOVE", predict_best_move(player_positions, "X"))
+
+player_positions = {
+  "X": set([3, 7, 8]),
+  "O": set([1, 2])
+}
+
+print(draw_board(player_positions))
+print("STARTING AS O")
+print("BEST MOVE", predict_best_move(player_positions, "O"))
+
+print("STARTING AS X")
+print("BEST MOVE", predict_best_move(player_positions, "X"))
 
 
+player_positions = {
+  "X": set([1, 5]),
+  "O": set([2, 3, 4, 7])
+}
 
+print(draw_board(player_positions))
+print("STARTING AS O")
+print("BEST MOVE", predict_best_move(player_positions, "O"))
+
+print("STARTING AS X")
+print("BEST MOVE", predict_best_move(player_positions, "X"))
+
+
+# print(draw_board(player_positions))
+
+# print("STARTING AS O")
+# print("BEST MOVE", predict_best_move(player_positions, "O"))
+#
+# print("STARTING AS X")
+# print("BEST MOVE", predict_best_move(player_positions, "X"))
+
+player_positions = {
+  "X": set([1, 2, 5]),
+  "O": set([3, 4, 7])
+}
+
+# print(draw_board(player_positions))
+
+# print("BEST MOVE", predict_best_move(player_positions, "O"))
+# print("BEST MOVE", predict_best_move(player_positions, "X"))
+
+player_positions = {
+  "X": set([1, 5]),
+  "O": set([3, 7])
+}
+
+# print(draw_board(player_positions))
+
+# print("BEST MOVE", predict_best_move(player_positions, "O"))
+# print("BEST MOVE", predict_best_move(player_positions, "X"))
+
+
+#
+# current_turn = "X"
+# turn = 1
+#
+#
+# while(False):
+#   if current_turn == "X":
+#     best_move = determine_best_move(player_positions, "X")
+#     move = best_move["best_move"]
+#
+#     if type(move) == list:
+#       move = move[0]
+#
+#     player_positions = make_move(player_positions, move, "X")
+#
+#   else:
+#     player_positions = make_random_move(player_positions, player="O")
+#
+#   if player_won(player_positions, current_turn):
+#     print("PLAYER ", current_turn, " has won on turn %s!" % turn)
+#     break
+#
+#   elif game_tied(player_positions):
+#     print("TIE ", current_turn, " on turn %s" % turn)
+#
+#   current_turn = other_player(current_turn)
+#
+#   turn += 1
+#
+#
+#
